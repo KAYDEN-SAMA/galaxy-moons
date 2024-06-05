@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  direction: rtl;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+  background-color: #121212;
+}
+
+body {
+  margin: 0 0 10vh;
+  font-family: "Alexandria", sans-serif;
+  color: #ffffff;
+}
+
+header {
+  border-bottom: 1px solid #333333;
+  padding: 5%;
+  background-color: #1e1e1e;
+}
+
+header h1 {
+  animation: fadeInDown 1s ease-in-out;
+  color: #ffffff;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  padding: 5%;
+}
+
+.moon-div {
+  padding: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  flex-direction: row;
+  width: 100%;
+  border: 1px solid #333333;
+  border-radius: 1em;
+  margin-bottom: 8%;
+  box-shadow: 0 0 7px 0 rgba(255, 255, 255, 0.5);
+  background-color: #252525;
+  transition: box-shadow 0.3s;
+}
+
+.moon-div:hover {
+  box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.7);
+}
+
+.moon-div a {
+  font-size: 2.7em;
+  color: #25D366; 
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  padding: 2%;
+  border-radius: 20%;
+  margin-left: 4%;
+}
+
+.moon-div a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #25D366;
+}
+
+.moon-div a:active {
+  transform: scale(0.9);
+  box-shadow: 0 0 25px #25D366;
+}
+
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #333333;
+  padding: 5%;
+  background-color: #1e1e1e;
+}
+
+/* keyframes and media screens here 👇*/
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 575px) {
+  main {
+    display: block;
+  }
+}
