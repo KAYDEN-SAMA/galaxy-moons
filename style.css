@@ -88,6 +88,10 @@ footer {
   background-color: #1e1e1e;
 }
 
+footer a {
+  color: #ffffff;
+}
+
 /* keyframes and media screens here 👇*/
 @keyframes fadeInDown {
   from {
